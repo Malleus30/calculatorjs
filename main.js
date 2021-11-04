@@ -62,13 +62,18 @@ function calc(operator, a, b){
     a=+a;
     b=+b;
     if(checkValue) {
-        return 'error';
+        console.log('error');
     }else if(operator in operations){
         console.log(operations[operator]);
+    }else {
+        console.log('unknown operation')
     }
 }
 
-calc("del", 3, 2);
-calc('plus',2, 5);
+calc('del',3,'g');
+calc('mult', 2 , 5);
+calc ('dffgdfgd', 2, 4);
+calc ('exp',3);
+
 
 
